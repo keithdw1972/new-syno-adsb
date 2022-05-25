@@ -65,7 +65,7 @@ services:
       - BEASTHOST=192.168.170.7
       - TZ=${FEEDER_TZ}
       - FR24KEY=${FR24_SHARING_KEY}
-      - MLAT=yes
+      - MLAT=no
     tmpfs:
       - /var/log
     env_file:
