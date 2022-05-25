@@ -3,6 +3,7 @@ version: '3.8'
 volumes:
   readsbpb_rrd:
   readsbpb_autogain:
+  tar1090_heatmap:
 
 services:
    #readsb:
