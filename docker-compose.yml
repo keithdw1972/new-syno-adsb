@@ -51,4 +51,21 @@ services:
       - /var/log
     env_file:
       - stack.env
-   
+   flightradar24:
+    image: ghcr.io/sdr-enthusiasts/docker-flightradar24:latest
+    tty: true
+    container_name: flightradar24
+    restart: always
+    depends_on:
+    #  - readsb
+    ports:
+      - 8754:8754
+    environment:
+      - BEASTHOST=192.168.170.7
+      - TZ=${FEEDER_TZ}
+      - FR24KEY=${FR24_SHARING_KEY}
+      - MLAT=yes
+    tmpfs:
+      - /var/log
+    env_file:
+      - stack.env
