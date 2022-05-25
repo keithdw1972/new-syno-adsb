@@ -56,7 +56,7 @@ services:
     tty: true
     container_name: flightradar24
     restart: always
-    depends_on:
+    #depends_on:
     #  - readsb
     ports:
       - 8754:8754
