@@ -39,7 +39,7 @@ services:
       # Mount for telegraf config
       - ./telegraf/mytelegraf.conf:/etc/telegraf/telegraf.conf
     env_file:
-      - ./influxv2.env
+      - influxv2.env
     environment: 
       - DOCKER_INFLUXDB_INIT_ORG=myorg
       - DOCKER_INFLUXDB_INIT_BUCKET=mybucket
