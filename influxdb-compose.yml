@@ -27,7 +27,7 @@ services:
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=mytoken
       - INFLUXD_TLS_CERT=/etc/ssl/influxdb-selfsigned.crt
       - INFLUXD_TLS_KEY=/etc/ssl/influxdb-selfsigned.key
-    entrypoint: ["./entrypoint.sh"]
+    entrypoint: ["./infentrypoint.sh"]
     restart: on-failure:10
     depends_on:
       - influxdb
