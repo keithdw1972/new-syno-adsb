@@ -89,8 +89,6 @@ services:
       - "tar1090_heatmap:/var/globe_history"
     tmpfs:
       - /run:exec,size=64M
-   360radar:
-     build: ./build
       - /var/log
     env_file:
       - stack.env
@@ -131,3 +129,5 @@ services:
     tmpfs:
       - /run:exec,size=64M
       - /var/log/pfclient
+   360radar:
+     build: ./build
