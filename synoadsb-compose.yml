@@ -122,7 +122,7 @@ services:
       - 30053:30053
     environment:
       - TZ=${FEEDER_TZ}
-      - BEASTHOST=readsb
+      - BEASTHOST=192.168.170.7
       - LAT=${FEEDER_LAT}
       - LONG=${FEEDER_LONG}
       - SHARECODE=${PLANEFINDER_SHARECODE}
