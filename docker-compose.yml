@@ -34,7 +34,7 @@ services:
    piaware2:
     image: ghcr.io/sdr-enthusiasts/docker-piaware:latest_i386
     tty: true
-    container_name: piaware
+    container_name: piaware2
     restart: always
     #depends_on:
     #  - readsb
