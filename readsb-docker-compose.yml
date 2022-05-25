@@ -15,6 +15,7 @@ services:
       - /dev/bus/usb:/dev/bus/usb
     ports:
       - 8080:8080
+      - 30005:30005
     environment:
       - TZ=${FEEDER_TZ}
       - READSB_DEVICE_TYPE=rtlsdr
