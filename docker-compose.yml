@@ -32,7 +32,7 @@ services:
    #   - /run/readsb
    #   - /var/log
    piaware:
-    image: ghcr.io/sdr-enthusiasts/docker-piaware:latest_i386
+    image: ghcr.io/sdr-enthusiasts/docker-piaware:latest
     tty: true
     container_name: piaware
     restart: always
