@@ -50,5 +50,5 @@ services:
       - /run:exec,size=64M
       - /var/log
     env_file:
-      - .env
+      - stack.env
    
