@@ -31,8 +31,8 @@ services:
    # tmpfs:
    #   - /run/readsb
    #   - /var/log
-   piaware:
-    image: ghcr.io/sdr-enthusiasts/docker-piaware:latest
+   piaware2:
+    image: ghcr.io/sdr-enthusiasts/docker-piaware:latest_i386
     tty: true
     container_name: piaware
     restart: always
