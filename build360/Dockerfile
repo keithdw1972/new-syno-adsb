@@ -17,9 +17,9 @@ RUN set -x && \
         socat \
         xz-utils \
         && \
-    
+    # Deply the mutability mlat-client
     # Deploy s6-overlay
-    curl -s https://raw.githubusercontent.com/mikenye/deploy-s6-overlay/master/deploy-s6-overlay.sh | sh && \
+    #curl -s https://raw.githubusercontent.com/mikenye/deploy-s6-overlay/master/deploy-s6-overlay.sh | sh && \
     # Clean up
     apt-get remove -y \
         binutils \
@@ -31,11 +31,11 @@ RUN set -x && \
         python3-dev \
         xz-utils \
         && \
-    apt-get autoremove -y && \
-    rm -rf /tmp/* /src /var/lib/apt/lists/* && \
+    apt-get autoremove -y
+    #rm -rf /tmp/* /src /var/lib/apt/lists/* && \
     # Record versions
-    echo "mlat-client $BRANCH_MLAT_CLIENT" > /VERSIONS && \
-    cat /VERSIONS
+    #echo "mlat-client $BRANCH_MLAT_CLIENT" > /VERSIONS && \
+    #cat /VERSIONS
 
 # Copy config files
 #COPY etc/ /etc/
