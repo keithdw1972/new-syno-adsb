@@ -131,5 +131,5 @@ services:
       - /var/log/pfclient
    360radar:
      build: ../build360/Dockerfile
-     image_name: keithdw/360:latest
+     image: keithdw/360:latest
      container_name: 360radar
