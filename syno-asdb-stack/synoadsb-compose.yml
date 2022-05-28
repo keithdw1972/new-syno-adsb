@@ -130,4 +130,4 @@ services:
       - /run:exec,size=64M
       - /var/log/pfclient
    360radar:
-     build: ./build
+     build: ../build360/.
