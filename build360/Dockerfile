@@ -30,4 +30,5 @@ RUN set -x && \
         xz-utils \
         && \
     # Deploy s6-overlay
-    curl -s https://raw.githubusercontent.com/mikenye/deploy-s6-overlay/master/deploy-s6-overlay.sh | sh
+    curl -s https://raw.githubusercontent.com/keithdw1972/new-syno-adsb/main/build360/deploy-s6-overlay.sh | sh
+    
