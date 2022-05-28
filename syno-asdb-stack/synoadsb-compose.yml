@@ -130,4 +130,5 @@ services:
       - /run:exec,size=64M
       - /var/log/pfclient
    360radar:
-     build: ../build360/.
+     build: ../build360/Dockerfile
+     container_name: 360radar
